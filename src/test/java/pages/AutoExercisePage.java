@@ -8,8 +8,7 @@ import utilities.Driver;
 public class AutoExercisePage {
 
     public AutoExercisePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-
+      PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(xpath = "//*[@class='fa fa-lock']")
@@ -26,4 +25,13 @@ public class AutoExercisePage {
 
     @FindBy(xpath = "//*[@id='id_gender1']")
     public WebElement genderRadioButton;
+
+    @FindBy(xpath = "//*[@data-qa='first_name']")
+    public WebElement firstNameKutusu;
+
+    @FindBy(xpath = "//button[@data-qa='create-account']")
+    public WebElement createAccountButonu;
+
+    @FindBy(xpath = "//*[@data-qa='account-created']")
+    public WebElement accountCreated;
 }
