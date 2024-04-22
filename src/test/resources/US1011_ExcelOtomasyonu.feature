@@ -1,6 +1,7 @@
+@wip
 Feature: US1011 Excel otomasyonu
 
-  @wip
+
   Scenario: TC17
 
     Given kullanici excel dosyasini kullanabilecegi ayarlari yapar

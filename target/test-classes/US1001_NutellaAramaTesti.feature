@@ -1,3 +1,4 @@
+@nutakif
 Feature: US1001 Nutella arama testi
 
   Scenario: TC01 Kullanici amazonda Nutella arayabilmeli
@@ -22,7 +23,7 @@ Feature: US1001 Nutella arama testi
     Then arama kutusuna Java yazip, ENTER tusuna basar
     And arama sonuclarinin Java icerdigini test eder
     And sayfayi kapatir
-  Example
+
 
 
 

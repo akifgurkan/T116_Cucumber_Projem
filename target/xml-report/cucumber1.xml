@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="21.532" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="US1001 Nutella arama testi" name="TC01 Kullanici amazonda Nutella arayabilmeli" time="8.599">
+<testsuite name="Cucumber" time="26.873" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="US1002 Kullanici Background kullanarak amazonda istedigi aramalari yapar" name="TC04 Kullanici amazonda Nutella arayabilmeli" time="7.701">
 <system-out><![CDATA[
 Given kullanici amazon anasayfaya gider.....................................passed
 Then arama kutusuna Nutella yazip, ENTER tusuna basar.......................passed
@@ -8,7 +8,7 @@ And arama sonuclarinin Nutella icerdigini test eder.........................pass
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US1001 Nutella arama testi" name="TC02 Kullanici amazonda Samsung aratabilmeli" time="6.61">
+<testcase classname="US1002 Kullanici Background kullanarak amazonda istedigi aramalari yapar" name="TC05 Kullanici amazonda Samsung aratabilmeli" time="6.941">
 <system-out><![CDATA[
 Given kullanici amazon anasayfaya gider.....................................passed
 Then arama kutusuna Samsung yazip, ENTER tusuna basar.......................passed
@@ -16,11 +16,12 @@ And arama sonuclarinin Samsung icerdigini test eder.........................pass
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US1001 Nutella arama testi" name="TC03 Kullanici amazonda Java aratabilmeli" time="6.093">
+<testcase classname="US1004 Amazonda listeden ilk urunun dogru oldugunu test eder" name="TC08 ilk urun ismi arattirdigimiz kelimeyi icermeli" time="12.008">
 <system-out><![CDATA[
-Given kullanici amazon anasayfaya gider.....................................passed
-Then arama kutusuna Java yazip, ENTER tusuna basar..........................passed
-And arama sonuclarinin Java icerdigini test eder............................passed
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then arama kutusuna "Nutella" yazip, ENTER tusuna basar.....................passed
+When ilk urunu tiklar.......................................................passed
+Then urun isminde "Nutella" oldugunu test eder..............................passed
 And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>

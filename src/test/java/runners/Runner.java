@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources", // testlerimizin olduğu (Cucumber) klasor yolu (.feature lerin)
         glue = "stepdefinitions", // stepdefinitions (Java) klasoru. Testlerimizin olusturuldugu klasor ile javayı birleştirir.
-        tags = "@wip",         // buraya hangi tagı yazarsak testlerdeki o tagyazan testleri çalıştırır.
+        tags = "@nutakif",         // buraya hangi tagı yazarsak testlerdeki o tag yazan testleri çalıştırır.
 
 
         dryRun = false  // varsayılan olarak false olur. True yaparsak ve bu classtan çalistirirsek sadece eksik adimlari bulur
